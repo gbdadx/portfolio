@@ -1,0 +1,263 @@
+/* ============================================================
+   GBD Portfolio — Custom Theme: Soft Editorial
+   Agregar DESPUÉS de los otros <link> en el <head>
+   ============================================================ */
+
+/* ── Paleta ─────────────────────────────────────────────── */
+:root {
+  --gbd-rose:    #e8a598;
+  --gbd-rose-dk: #d4887a;
+  --gbd-teal:    #7bb5ad;
+  --gbd-teal-dk: #6aa09a;
+  --gbd-cream:   #fdfaf7;
+  --gbd-ink:     #3d3530;
+  --gbd-gold:    #c9a87c;
+}
+
+/* ── Body ────────────────────────────────────────────────── */
+body {
+  background-color: var(--gbd-cream);
+  color: var(--gbd-ink);
+  animation: gbdFadeIn 0.5s ease;
+}
+@keyframes gbdFadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Utilidades Bootstrap ────────────────────────────────── */
+.bg-primary   { background-color: var(--gbd-rose)  !important; }
+.bg-secondary { background-color: var(--gbd-teal)  !important; }
+.text-secondary { color: var(--gbd-rose)  !important; }
+.text-primary   { color: var(--gbd-teal)  !important; }
+
+/* ── Navbar ──────────────────────────────────────────────── */
+#mainNav {
+  background-color: rgba(253, 250, 247, 0.96) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(61, 53, 48, 0.07);
+  box-shadow: 0 2px 20px rgba(61, 53, 48, 0.06);
+}
+#mainNav .navbar-brand {
+  color: var(--gbd-ink) !important;
+  letter-spacing: 0.06em;
+}
+#mainNav .navbar-nav li.nav-item a.nav-link {
+  color: var(--gbd-ink) !important;
+}
+#mainNav .navbar-nav li.nav-item a.nav-link:hover {
+  color: var(--gbd-rose) !important;
+}
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active {
+  background-color: var(--gbd-rose) !important;
+  color: #fff !important;
+}
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
+  background-color: var(--gbd-rose-dk) !important;
+}
+.navbar-toggler {
+  background-color: var(--gbd-rose) !important;
+  border: none !important;
+  color: #fff !important;
+}
+
+/* ── Masthead ────────────────────────────────────────────── */
+.masthead {
+  background: linear-gradient(140deg, #f7d9d3 0%, #d5ebe7 55%, #ebe7f5 100%) !important;
+  color: var(--gbd-ink) !important;
+}
+.masthead .masthead-heading,
+.masthead .masthead-subheading,
+.masthead .text-white {
+  color: var(--gbd-ink) !important;
+}
+.masthead-avatar {
+  border-radius: 50%;
+  border: 5px solid rgba(255, 255, 255, 0.75);
+  box-shadow: 0 10px 40px rgba(61, 53, 48, 0.14);
+}
+
+/* ── Divisores ───────────────────────────────────────────── */
+.divider-custom .divider-custom-line {
+  background-color: var(--gbd-gold) !important;
+  border-color: var(--gbd-gold) !important;
+  opacity: 0.55;
+}
+.divider-custom .divider-custom-icon {
+  color: var(--gbd-gold) !important;
+  opacity: 0.65;
+}
+.divider-custom.divider-light .divider-custom-line {
+  background-color: rgba(61, 53, 48, 0.18) !important;
+  opacity: 1;
+}
+.divider-custom.divider-light .divider-custom-icon {
+  color: rgba(61, 53, 48, 0.28) !important;
+  opacity: 1;
+}
+
+/* ── Sección portfolio ───────────────────────────────────── */
+.portfolio,
+.page-section {
+  background-color: var(--gbd-cream);
+}
+
+/* Tarjetas */
+.portfolio .portfolio-item {
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(61, 53, 48, 0.07);
+  transition: transform 0.28s cubic-bezier(.34, 1.56, .64, 1),
+              box-shadow 0.28s ease;
+}
+.portfolio .portfolio-item:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 16px 40px rgba(61, 53, 48, 0.13);
+}
+.portfolio .portfolio-item .portfolio-item-caption {
+  background-color: rgba(232, 165, 152, 0.88) !important;
+  border-radius: 18px;
+  backdrop-filter: blur(2px);
+}
+.portfolio .portfolio-item .portfolio-item-caption-content {
+  font-size: 1rem !important;
+  padding: 1rem;
+}
+
+/* Texto dentro del hover */
+.card-project-name {
+  display: block;
+  font-family: "SB Heading", Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #fff;
+  margin-bottom: 0.3rem;
+  letter-spacing: 0.02em;
+}
+.card-project-hint {
+  display: block;
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.88);
+  letter-spacing: 0.07em;
+}
+
+/* Etiqueta visible debajo de cada tarjeta */
+.portfolio-card-label {
+  text-align: center;
+  margin-top: 0.65rem;
+  font-family: "SB Heading", Montserrat, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--gbd-ink);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+/* Animación escalonada de entrada */
+.portfolio .col-md-6:nth-child(1)  { animation: gbdUp 0.5s 0.05s ease both; }
+.portfolio .col-md-6:nth-child(2)  { animation: gbdUp 0.5s 0.10s ease both; }
+.portfolio .col-md-6:nth-child(3)  { animation: gbdUp 0.5s 0.15s ease both; }
+.portfolio .col-md-6:nth-child(4)  { animation: gbdUp 0.5s 0.20s ease both; }
+.portfolio .col-md-6:nth-child(5)  { animation: gbdUp 0.5s 0.25s ease both; }
+.portfolio .col-md-6:nth-child(6)  { animation: gbdUp 0.5s 0.30s ease both; }
+.portfolio .col-md-6:nth-child(7)  { animation: gbdUp 0.5s 0.35s ease both; }
+.portfolio .col-md-6:nth-child(8)  { animation: gbdUp 0.5s 0.40s ease both; }
+.portfolio .col-md-6:nth-child(9)  { animation: gbdUp 0.5s 0.45s ease both; }
+.portfolio .col-md-6:nth-child(10) { animation: gbdUp 0.5s 0.50s ease both; }
+.portfolio .col-md-6:nth-child(11) { animation: gbdUp 0.5s 0.55s ease both; }
+.portfolio .col-md-6:nth-child(12) { animation: gbdUp 0.5s 0.60s ease both; }
+.portfolio .col-md-6:nth-child(13) { animation: gbdUp 0.5s 0.65s ease both; }
+.portfolio .col-md-6:nth-child(14) { animation: gbdUp 0.5s 0.70s ease both; }
+.portfolio .col-md-6:nth-child(15) { animation: gbdUp 0.5s 0.75s ease both; }
+@keyframes gbdUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Sección About ───────────────────────────────────────── */
+.page-section.bg-primary {
+  background: linear-gradient(135deg, #f5d5ce 0%, #e9e4f5 100%) !important;
+  color: var(--gbd-ink) !important;
+}
+.page-section.bg-primary h2,
+.page-section.bg-primary p,
+.page-section.bg-primary .p,
+.page-section.bg-primary strong,
+.page-section.bg-primary .text-white {
+  color: var(--gbd-ink) !important;
+}
+
+/* ── Botones ─────────────────────────────────────────────── */
+.btn-primary {
+  background-color: var(--gbd-rose)    !important;
+  border-color:     var(--gbd-rose)    !important;
+  border-radius:    50px               !important;
+  padding:          0.5rem 1.6rem      !important;
+  font-weight:      700;
+  letter-spacing:   0.04em;
+  color:            #fff               !important;
+  transition: background-color 0.2s, transform 0.15s;
+}
+.btn-primary:hover {
+  background-color: var(--gbd-rose-dk) !important;
+  border-color:     var(--gbd-rose-dk) !important;
+  transform: translateY(-2px);
+}
+
+/* ── Footer ──────────────────────────────────────────────── */
+.footer {
+  background-color: var(--gbd-teal) !important;
+  color: #fff !important;
+}
+.footer h4 {
+  color: rgba(255, 255, 255, 0.88) !important;
+  font-size: 0.72rem !important;
+  letter-spacing: 0.18em !important;
+  text-transform: uppercase;
+}
+.footer .lead,
+.footer .p {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+.copyright {
+  background-color: var(--gbd-teal-dk) !important;
+}
+.copyright small {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+.btn-outline-light {
+  border-color: rgba(255, 255, 255, 0.45) !important;
+}
+.btn-outline-light:hover {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+/* ── Modales ─────────────────────────────────────────────── */
+.portfolio-modal .portfolio-modal-title {
+  color: var(--gbd-rose) !important;
+}
+.portfolio-modal .close {
+  color: var(--gbd-rose) !important;
+}
+
+/* ── Formulario de contacto ──────────────────────────────── */
+#contact {
+  background-color: #fff;
+  border-top: 1px solid rgba(61, 53, 48, 0.06);
+}
+.form-control:focus {
+  border-color: var(--gbd-rose) !important;
+  box-shadow: 0 0 0 0.18rem rgba(232, 165, 152, 0.28) !important;
+}
+
+/* ── Heading de secciones ────────────────────────────────── */
+.page-section-heading {
+  color: var(--gbd-ink) !important;
+}
+
+/* ── Scroll to top ───────────────────────────────────────── */
+.scroll-to-top a {
+  background-color: rgba(232, 165, 152, 0.8) !important;
+}
