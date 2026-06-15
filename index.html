@@ -2,29 +2,22 @@
 <html lang="en">
 
 <head>
-
-
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Portfolio de Gabriela B. Diaz — Frontend Developer">
     <meta name="author" content="Gabriela B. Diaz">
     <title>GBD — Portfolio</title>
-
-    <!-- Favicon -->
     <link rel="shortcut icon" href="./assets/img/descarga.png" type="image/x-icon">
-
-    <!-- Font Awesome icons (free version) -->
+    <!-- Font Awesome icons (free version)-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
         crossorigin="anonymous"></script>
-
-    <!-- Core theme CSS (Bootstrap base) -->
-    <link rel="stylesheet" href="css/styles.css">
-
-    <!-- Fonts CSS -->
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- Fonts CSS-->
     <link rel="stylesheet" href="css/heading.css">
     <link rel="stylesheet" href="css/body.css">
-
-    <!-- Custom theme override (último para que sobrescriba todo) -->
+    <!-- Custom theme override -->
+    <link rel="stylesheet" href="css/custom.css">
 </head>
 
 <body id="page-top">
@@ -79,7 +72,7 @@
             </div>
             <!-- Portfolio Grid Items-->
             <div class="row justify-content-center">
-                <!-- Portfolio Item 1--><!--
+<!-- Portfolio Item 1--><!--
                 <div class="col-md-6 col-lg-4 mb-5">
                     <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal0">
                         <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
@@ -160,8 +153,7 @@
 -->
                 <div class="col-md-6 col-lg-4 mb-5">
                     <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                             <div class="portfolio-item-caption-content text-center text-white">
                                 <span class="card-project-name">InstaFront</span>
                                 <span class="card-project-hint">ver proyecto →</span>
@@ -174,8 +166,7 @@
 
                 <div class="col-md-6 col-lg-4 mb-5">
                     <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal7">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                             <div class="portfolio-item-caption-content text-center text-white">
                                 <span class="card-project-name">Banco Midas</span>
                                 <span class="card-project-hint">ver proyecto →</span>
@@ -185,7 +176,7 @@
                     </div>
                     <div class="portfolio-card-label">Banco Midas</div>
                 </div>
-                <!--
+<!--
                 <div class="col-md-6 col-lg-4 mb-5 d-flex flex-column align-items-center justify-content-center">
                     <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal8">
                         <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
@@ -201,8 +192,7 @@
 
                 <div class="col-md-6 col-lg-4 mb-5 d-flex flex-column align-items-center justify-content-center">
                     <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModa24">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                             <div class="portfolio-item-caption-content text-center text-white">
                                 <span class="card-project-name">Untref School</span>
                                 <span class="card-project-hint">ver proyecto →</span>
@@ -215,8 +205,7 @@
 
                 <div class="col-md-6 col-lg-4 mb-5 d-flex flex-column align-items-center justify-content-center">
                     <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModa19">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                             <div class="portfolio-item-caption-content text-center text-white">
                                 <span class="card-project-name">Fun with Flags</span>
                                 <span class="card-project-hint">ver proyecto →</span>
@@ -229,8 +218,7 @@
 
                 <div class="col-md-6 col-lg-4 mb-5 d-flex flex-column align-items-center justify-content-center">
                     <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModa20">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                             <div class="portfolio-item-caption-content text-center text-white">
                                 <span class="card-project-name">CryptoCompare</span>
                                 <span class="card-project-hint">ver proyecto →</span>
@@ -240,7 +228,7 @@
                     </div>
                     <div class="portfolio-card-label">CryptoCompare</div>
                 </div>
-                <!--
+<!--
                 <div class="col-md-6 col-lg-4 mb-5">
                     <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModa21">
                         <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
@@ -287,484 +275,425 @@
     <!-- Portfolio Modals -->
     <div class="projects-grid">
 
-        <div class="portfolio-modal modal fade" id="portfolioModal0" tabindex="-1" role="dialog"
-            aria-labelledby="#portfolioModal0Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
-                            aria-hidden="true"><i class="fas fa-times"></i></span></button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <h2 class="portfolio-modal-title text-secondary mb-0">Lemmon Pie</h2>
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <a href="https://gbdadx.github.io/UNTREFu4lemonPie/" target="_blank"
-                                        rel="noopener noreferrer">
-                                        <img src="./assets/img/pie.png" class="img-fluid rounded mb-5"
-                                            alt="Lemmon Pie" />
-                                    </a>
-                                    <p class="mb-5"></p>
-                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i
-                                            class="fas fa-times fa-fw"></i> Cerrar</button>
+    <div class="portfolio-modal modal fade" id="portfolioModal0" tabindex="-1" role="dialog"
+        aria-labelledby="#portfolioModal0Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="portfolio-modal-title text-secondary mb-0">Lemmon Pie</h2>
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
                                 </div>
+                                <a href="https://gbdadx.github.io/UNTREFu4lemonPie/" target="_blank" rel="noopener noreferrer">
+                                    <img src="./assets/img/pie.png" class="img-fluid rounded mb-5" alt="Lemmon Pie" />
+                                </a>
+                                <p class="mb-5"></p>
+                                <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i> Cerrar</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog"
-            aria-labelledby="#portfolioModal1Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
-                            aria-hidden="true"><i class="fas fa-times"></i></span></button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <h2 class="portfolio-modal-title text-secondary mb-0">CV Batman</h2>
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <a href="https://gbdadx.github.io/UNTREFu4BatmanCv/" target="_blank"
-                                        rel="noopener noreferrer">
-                                        <img src="./assets/img/bat.png" class="img-fluid rounded mb-5"
-                                            alt="CV Batman" />
-                                    </a>
-                                    <p class="mb-5"></p>
-                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i
-                                            class="fas fa-times fa-fw"></i> Cerrar</button>
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog"
+        aria-labelledby="#portfolioModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="portfolio-modal-title text-secondary mb-0">CV Batman</h2>
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
                                 </div>
+                                <a href="https://gbdadx.github.io/UNTREFu4BatmanCv/" target="_blank" rel="noopener noreferrer">
+                                    <img src="./assets/img/bat.png" class="img-fluid rounded mb-5" alt="CV Batman" />
+                                </a>
+                                <p class="mb-5"></p>
+                                <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i> Cerrar</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog"
-            aria-labelledby="#portfolioModal2Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
-                            aria-hidden="true"><i class="fas fa-times"></i></span></button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <h2 class="portfolio-modal-title text-secondary mb-0">Pet Shop</h2>
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <a href="https://gbdadx.github.io/UNTREFu11PetShopU6/" target="_blank"
-                                        rel="noopener noreferrer">
-                                        <img src="./assets/img/pets.png" class="img-fluid rounded mb-5"
-                                            alt="Pet Shop" />
-                                    </a>
-                                    <p class="mb-5"></p>
-                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i
-                                            class="fas fa-times fa-fw"></i> Cerrar</button>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog"
+        aria-labelledby="#portfolioModal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="portfolio-modal-title text-secondary mb-0">Pet Shop</h2>
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
                                 </div>
+                                <a href="https://gbdadx.github.io/UNTREFu11PetShopU6/" target="_blank" rel="noopener noreferrer">
+                                    <img src="./assets/img/pets.png" class="img-fluid rounded mb-5" alt="Pet Shop" />
+                                </a>
+                                <p class="mb-5"></p>
+                                <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i> Cerrar</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog"
-            aria-labelledby="#portfolioModal3Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
-                            aria-hidden="true"><i class="fas fa-times"></i></span></button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <h2 class="portfolio-modal-title text-secondary mb-0">Supers</h2>
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <a href="https://gbdadx.github.io/UNTREFu10DCheroes/" target="_blank"
-                                        rel="noopener noreferrer">
-                                        <img src="./assets/img/splat.png" class="img-fluid rounded mb-5" alt="Supers" />
-                                    </a>
-                                    <p class="mb-5"></p>
-                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i
-                                            class="fas fa-times fa-fw"></i> Cerrar</button>
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog"
+        aria-labelledby="#portfolioModal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="portfolio-modal-title text-secondary mb-0">Supers</h2>
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
                                 </div>
+                                <a href="https://gbdadx.github.io/UNTREFu10DCheroes/" target="_blank" rel="noopener noreferrer">
+                                    <img src="./assets/img/splat.png" class="img-fluid rounded mb-5" alt="Supers" />
+                                </a>
+                                <p class="mb-5"></p>
+                                <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i> Cerrar</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog"
-            aria-labelledby="#portfolioModal4Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
-                            aria-hidden="true"><i class="fas fa-times"></i></span></button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <h2 class="portfolio-modal-title text-secondary mb-0">Pizzeria</h2>
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <a href="https://gbdadx.github.io/UNTREFPizzaU9/" target="_blank"
-                                        rel="noopener noreferrer">
-                                        <img src="./assets/img/piza.png" class="img-fluid rounded mb-5"
-                                            alt="Pizzeria" />
-                                    </a>
-                                    <p class="mb-5"></p>
-                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i
-                                            class="fas fa-times fa-fw"></i> Cerrar</button>
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog"
+        aria-labelledby="#portfolioModal4Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="portfolio-modal-title text-secondary mb-0">Pizzeria</h2>
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
                                 </div>
+                                <a href="https://gbdadx.github.io/UNTREFPizzaU9/" target="_blank" rel="noopener noreferrer">
+                                    <img src="./assets/img/piza.png" class="img-fluid rounded mb-5" alt="Pizzeria" />
+                                </a>
+                                <p class="mb-5"></p>
+                                <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i> Cerrar</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog"
-            aria-labelledby="#portfolioModal5Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
-                            aria-hidden="true"><i class="fas fa-times"></i></span></button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <h2 class="portfolio-modal-title text-secondary mb-0">Game Shop</h2>
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <a href="https://gbdadx.github.io/UNTREFu7GameShop/" target="_blank"
-                                        rel="noopener noreferrer">
-                                        <img src="./assets/img/joy.png" class="img-fluid rounded mb-5"
-                                            alt="Game Shop" />
-                                    </a>
-                                    <p class="mb-5"></p>
-                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i
-                                            class="fas fa-times fa-fw"></i> Cerrar</button>
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog"
+        aria-labelledby="#portfolioModal5Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="portfolio-modal-title text-secondary mb-0">Game Shop</h2>
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
                                 </div>
+                                <a href="https://gbdadx.github.io/UNTREFu7GameShop/" target="_blank" rel="noopener noreferrer">
+                                    <img src="./assets/img/joy.png" class="img-fluid rounded mb-5" alt="Game Shop" />
+                                </a>
+                                <p class="mb-5"></p>
+                                <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i> Cerrar</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog"
-            aria-labelledby="#portfolioModal6Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
-                            aria-hidden="true"><i class="fas fa-times"></i></span></button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <h2 class="portfolio-modal-title text-secondary mb-0">InstaFront</h2>
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <a href="https://gbdadx.github.io/UNTREFu11InstaFront/" target="_blank"
-                                        rel="noopener noreferrer">
-                                        <img src="./assets/img/foto-perfilGrande.png" class="img-fluid rounded mb-5"
-                                            alt="InstaFront" />
-                                    </a>
-                                    <p class="mb-5"></p>
-                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i
-                                            class="fas fa-times fa-fw"></i> Cerrar</button>
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog"
+        aria-labelledby="#portfolioModal6Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="portfolio-modal-title text-secondary mb-0">InstaFront</h2>
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
                                 </div>
+                                <a href="https://gbdadx.github.io/UNTREFu11InstaFront/" target="_blank" rel="noopener noreferrer">
+                                    <img src="./assets/img/foto-perfilGrande.png" class="img-fluid rounded mb-5" alt="InstaFront" />
+                                </a>
+                                <p class="mb-5"></p>
+                                <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i> Cerrar</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog"
-            aria-labelledby="#portfolioModal7Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
-                            aria-hidden="true"><i class="fas fa-times"></i></span></button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <h2 class="portfolio-modal-title text-secondary mb-0">Banco Midas</h2>
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <a href="https://gbdadx.github.io/BancoMidasTP184Me/#" target="_blank"
-                                        rel="noopener noreferrer">
-                                        <img src="./assets/img/Orange-Favicon.png" class="img-fluid rounded mb-5"
-                                            alt="Banco Midas" />
-                                    </a>
-                                    <p class="mb-5"></p>
-                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i
-                                            class="fas fa-times fa-fw"></i> Cerrar</button>
+    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog"
+        aria-labelledby="#portfolioModal7Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="portfolio-modal-title text-secondary mb-0">Banco Midas</h2>
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
                                 </div>
+                                <a href="https://gbdadx.github.io/BancoMidasTP184Me/#" target="_blank" rel="noopener noreferrer">
+                                    <img src="./assets/img/Orange-Favicon.png" class="img-fluid rounded mb-5" alt="Banco Midas" />
+                                </a>
+                                <p class="mb-5"></p>
+                                <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i> Cerrar</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog"
-            aria-labelledby="#portfolioModal8Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
-                            aria-hidden="true"><i class="fas fa-times"></i></span></button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <h2 class="portfolio-modal-title text-secondary mb-0">Amazing Events</h2>
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <a href="https://gbdadx.github.io/APfrontEndAmzEvGBDiaz/" target="_blank"
-                                        rel="noopener noreferrer">
-                                        <img src="./assets/img/favicon-AmazingEvents.ico" class="img-fluid rounded mb-5"
-                                            alt="Amazing Events" />
-                                    </a>
-                                    <p class="mb-5"></p>
-                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i
-                                            class="fas fa-times fa-fw"></i> Cerrar</button>
+    <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog"
+        aria-labelledby="#portfolioModal8Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="portfolio-modal-title text-secondary mb-0">Amazing Events</h2>
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
                                 </div>
+                                <a href="https://gbdadx.github.io/APfrontEndAmzEvGBDiaz/" target="_blank" rel="noopener noreferrer">
+                                    <img src="./assets/img/favicon-AmazingEvents.ico" class="img-fluid rounded mb-5" alt="Amazing Events" />
+                                </a>
+                                <p class="mb-5"></p>
+                                <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i> Cerrar</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="portfolio-modal modal fade" id="portfolioModa24" tabindex="-1" role="dialog"
-            aria-labelledby="#portfolioModa24Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
-                            aria-hidden="true"><i class="fas fa-times"></i></span></button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <h2 class="portfolio-modal-title text-secondary mb-0">Untref School</h2>
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <a href="https://gbdadx.github.io/UntrefIntegradorConBootstrap/" target="_blank"
-                                        rel="noopener noreferrer">
-                                        <img src="./assets/img/lapices.png" class="img-fluid rounded mb-5"
-                                            alt="UntrefSchool" />
-                                    </a>
-                                    <p class="mb-5"></p>
-                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i
-                                            class="fas fa-times fa-fw"></i> Cerrar</button>
+    <div class="portfolio-modal modal fade" id="portfolioModa24" tabindex="-1" role="dialog"
+        aria-labelledby="#portfolioModa24Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="portfolio-modal-title text-secondary mb-0">Untref School</h2>
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
                                 </div>
+                                <a href="https://gbdadx.github.io/UntrefIntegradorConBootstrap/" target="_blank" rel="noopener noreferrer">
+                                    <img src="./assets/img/lapices.png" class="img-fluid rounded mb-5" alt="UntrefSchool" />
+                                </a>
+                                <p class="mb-5"></p>
+                                <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i> Cerrar</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="portfolio-modal modal fade" id="portfolioModa19" tabindex="-1" role="dialog"
-            aria-labelledby="#portfolioModa19Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
-                            aria-hidden="true"><i class="fas fa-times"></i></span></button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <h2 class="portfolio-modal-title text-secondary mb-0">Fun With Flags — apiRest</h2>
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <a href="https://gbdadx.github.io/PeoyectoIntegrador2UNTREfFunWithFlags2/"
-                                        target="_blank" rel="noopener noreferrer">
-                                        <img src="./assets/img/fun.png" class="img-fluid rounded mb-5"
-                                            alt="Fun with flags" />
-                                    </a>
-                                    <p class="mb-5"></p>
-                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i
-                                            class="fas fa-times fa-fw"></i> Cerrar</button>
+    <div class="portfolio-modal modal fade" id="portfolioModa19" tabindex="-1" role="dialog"
+        aria-labelledby="#portfolioModa19Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="portfolio-modal-title text-secondary mb-0">Fun With Flags — apiRest</h2>
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
                                 </div>
+                                <a href="https://gbdadx.github.io/PeoyectoIntegrador2UNTREfFunWithFlags2/" target="_blank" rel="noopener noreferrer">
+                                    <img src="./assets/img/fun.png" class="img-fluid rounded mb-5" alt="Fun with flags" />
+                                </a>
+                                <p class="mb-5"></p>
+                                <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i> Cerrar</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="portfolio-modal modal fade" id="portfolioModa20" tabindex="-1" role="dialog"
-            aria-labelledby="#portfolioModa20Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
-                            aria-hidden="true"><i class="fas fa-times"></i></span></button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <h2 class="portfolio-modal-title text-secondary mb-0">CryptoCompare</h2>
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <a href="https://gbdadx.github.io/comparaCry/" target="_blank"
-                                        rel="noopener noreferrer">
-                                        <img src="./assets/img/bitcoin.webp" class="img-fluid rounded mb-5"
-                                            alt="CryptoCompare" />
-                                    </a>
-                                    <p class="mb-5"></p>
-                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i
-                                            class="fas fa-times fa-fw"></i> Cerrar</button>
+    <div class="portfolio-modal modal fade" id="portfolioModa20" tabindex="-1" role="dialog"
+        aria-labelledby="#portfolioModa20Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="portfolio-modal-title text-secondary mb-0">CryptoCompare</h2>
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
                                 </div>
+                                <a href="https://gbdadx.github.io/comparaCry/" target="_blank" rel="noopener noreferrer">
+                                    <img src="./assets/img/bitcoin.webp" class="img-fluid rounded mb-5" alt="CryptoCompare" />
+                                </a>
+                                <p class="mb-5"></p>
+                                <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i> Cerrar</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="portfolio-modal modal fade" id="portfolioModa21" tabindex="-1" role="dialog"
-            aria-labelledby="#portfolioModa21Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
-                            aria-hidden="true"><i class="fas fa-times"></i></span></button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <h2 class="portfolio-modal-title text-secondary mb-0">SuperH — Online Shopping</h2>
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <a href="https://gbdadx.github.io/superheroesCarrito/" target="_blank"
-                                        rel="noopener noreferrer">
-                                        <img src="./assets/img/logo512.png" class="img-fluid rounded mb-5"
-                                            alt="SuperHeroes" />
-                                    </a>
-                                    <p class="mb-5"></p>
-                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i
-                                            class="fas fa-times fa-fw"></i> Cerrar</button>
+    <div class="portfolio-modal modal fade" id="portfolioModa21" tabindex="-1" role="dialog"
+        aria-labelledby="#portfolioModa21Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="portfolio-modal-title text-secondary mb-0">SuperH — Online Shopping</h2>
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
                                 </div>
+                                <a href="https://gbdadx.github.io/superheroesCarrito/" target="_blank" rel="noopener noreferrer">
+                                    <img src="./assets/img/logo512.png" class="img-fluid rounded mb-5" alt="SuperHeroes" />
+                                </a>
+                                <p class="mb-5"></p>
+                                <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i> Cerrar</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="portfolio-modal modal fade" id="portfolioModa22" tabindex="-1" role="dialog"
-            aria-labelledby="#portfolioModa22Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
-                            aria-hidden="true"><i class="fas fa-times"></i></span></button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <h2 class="portfolio-modal-title text-secondary mb-0">Seguros React — Untref</h2>
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <a href="https://proyecto3untref-react.netlify.app/" target="_blank"
-                                        rel="noopener noreferrer">
-                                        <img src="./assets/img/home.png" class="img-fluid rounded mb-5"
-                                            alt="Cotizador SegurosReact" />
-                                    </a>
-                                    <p class="mb-5"></p>
-                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i
-                                            class="fas fa-times fa-fw"></i> Cerrar</button>
+    <div class="portfolio-modal modal fade" id="portfolioModa22" tabindex="-1" role="dialog"
+        aria-labelledby="#portfolioModa22Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="portfolio-modal-title text-secondary mb-0">Seguros React — Untref</h2>
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
                                 </div>
+                                <a href="https://proyecto3untref-react.netlify.app/" target="_blank" rel="noopener noreferrer">
+                                    <img src="./assets/img/home.png" class="img-fluid rounded mb-5" alt="Cotizador SegurosReact" />
+                                </a>
+                                <p class="mb-5"></p>
+                                <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i> Cerrar</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="portfolio-modal modal fade" id="portfolioModa23" tabindex="-1" role="dialog"
-            aria-labelledby="#portfolioModa23Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
-                            aria-hidden="true"><i class="fas fa-times"></i></span></button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <h2 class="portfolio-modal-title text-secondary mb-0">Lista de Tareas (React)</h2>
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <a href="https://tasklistutn.netlify.app/" target="_blank"
-                                        rel="noopener noreferrer">
-                                        <img src="./assets/img/descarga.png" class="img-fluid rounded mb-5"
-                                            alt="Lista de tareas (React)" />
-                                    </a>
-                                    <p class="mb-5"></p>
-                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i
-                                            class="fas fa-times fa-fw"></i> Cerrar</button>
+    <div class="portfolio-modal modal fade" id="portfolioModa23" tabindex="-1" role="dialog"
+        aria-labelledby="#portfolioModa23Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="portfolio-modal-title text-secondary mb-0">Lista de Tareas (React)</h2>
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
                                 </div>
+                                <a href="https://tasklistutn.netlify.app/" target="_blank" rel="noopener noreferrer">
+                                    <img src="./assets/img/descarga.png" class="img-fluid rounded mb-5" alt="Lista de tareas (React)" />
+                                </a>
+                                <p class="mb-5"></p>
+                                <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i> Cerrar</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
     </div>
     <!-- fin modals -->
@@ -816,18 +745,15 @@
                 <form action="https://formspree.io/f/mdorkpqv" method="post" class="col-lg-5">
                     <div class="mb-3">
                         <label for="nombre" class="form-label">Name</label>
-                        <input type="text" class="form-control" name="name" id="nombre" aria-describedby="helpId"
-                            placeholder="name">
+                        <input type="text" class="form-control" name="name" id="nombre" aria-describedby="helpId" placeholder="name">
                     </div>
                     <div class="mb-3">
                         <label for="correo" class="form-label">Email</label>
-                        <input type="email" class="form-control" name="correo" id="correo" aria-describedby="helpId"
-                            placeholder="e-mail">
+                        <input type="email" class="form-control" name="correo" id="correo" aria-describedby="helpId" placeholder="e-mail">
                     </div>
                     <div class="mb-3">
                         <label for="telefono" class="form-label">Phone</label>
-                        <input type="tel" class="form-control" name="telefono" id="telefono" aria-describedby="helpId"
-                            placeholder="phone">
+                        <input type="tel" class="form-control" name="telefono" id="telefono" aria-describedby="helpId" placeholder="phone">
                     </div>
                     <div class="mb-3">
                         <label for="comentario" class="form-label">Comment / message</label>
@@ -848,16 +774,12 @@
                 </div>
                 <div class="col-lg-4 mb-5 mb-lg-0">
                     <h4 class="mb-4">LET'S STAY CONNECTED</h4>
-                    <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/gbdadx"><i
-                            class="fab fa-fw fa-github"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1"
-                        href="https://www.linkedin.com/in/gabrielabeatrizdiaz/"><i
-                            class="fab fa-fw fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/gbdadx"><i class="fab fa-fw fa-github"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/gabrielabeatrizdiaz/"><i class="fab fa-fw fa-linkedin-in"></i></a>
                 </div>
                 <div class="col-lg-4">
                     <h4 class="mb-4">ABOUT ME</h4>
-                    <p class="p lead mb-0">I am a creative person and eager to learn. I have knowledge of HTML, CSS,
-                        Bootstrap, JavaScript, React and SQL.</p>
+                    <p class="p lead mb-0">I am a creative person and eager to learn. I have knowledge of HTML, CSS, Bootstrap, JavaScript, React and SQL.</p>
                 </div>
             </div>
         </div>
