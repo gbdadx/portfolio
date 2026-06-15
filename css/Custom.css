@@ -13,17 +13,21 @@
   --gbd-cream:   #fdfaf7;
   --gbd-ink:     #3d3530;
   --gbd-gold:    #c9a87c;
-
-  /* Overrides de Bootstrap */
-  --primary: var(--gbd-rose);
-  --secondary: var(--gbd-teal);
-  --success: var(--gbd-teal-dk);
-  --info: var(--gbd-rose-dk);
-  --warning: var(--gbd-gold);
-  --danger: var(--gbd-rose-dk);
-  --light: var(--gbd-cream);
-  --dark: var(--gbd-ink);
 }
+
+/* ── Overrides Bootstrap ────────────────────────────────── */
+:root,
+body {
+  --primary: var(--gbd-rose) !important;
+  --secondary: var(--gbd-teal) !important;
+  --success: var(--gbd-teal-dk) !important;
+  --info: var(--gbd-rose-dk) !important;
+  --warning: var(--gbd-gold) !important;
+  --danger: var(--gbd-rose-dk) !important;
+  --light: var(--gbd-cream) !important;
+  --dark: var(--gbd-ink) !important;
+}
+
 
 
 /* ── Body ────────────────────────────────────────────────── */
