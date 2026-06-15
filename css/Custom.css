@@ -12,10 +12,16 @@
   --gbd-cream:   #fdfaf7;
   --gbd-ink:     #3d3530;
   --gbd-gold:    #c9a87c;
-}
-:root {
+
+  /* Overrides de Bootstrap */
   --primary: var(--gbd-rose);
   --secondary: var(--gbd-teal);
+  --success: var(--gbd-teal-dk);
+  --info: var(--gbd-rose-dk);
+  --warning: var(--gbd-gold);
+  --danger: var(--gbd-rose-dk);
+  --light: var(--gbd-cream);
+  --dark: var(--gbd-ink);
 }
 
 /* ── Body ────────────────────────────────────────────────── */
