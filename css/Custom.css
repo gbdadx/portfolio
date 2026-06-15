@@ -13,6 +13,10 @@
   --gbd-ink:     #3d3530;
   --gbd-gold:    #c9a87c;
 }
+:root {
+  --primary: var(--gbd-rose);
+  --secondary: var(--gbd-teal);
+}
 
 /* ── Body ────────────────────────────────────────────────── */
 body {
